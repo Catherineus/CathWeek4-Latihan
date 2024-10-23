@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cath Lip Gloss Glam</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #870b30;
+            padding: 1.5rem;
+        }
+
+        nav .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        nav .logo img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        nav .logo h1 {
+            color: white;
+            font-size: 3rem;
+        }
+
+        nav ul {
+            display: flex;
+            list-style-type: none;
+        }
+
+        nav ul li {
+            margin-left: 1rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 0.75rem 1.5rem;
+            background-color: #ffb6c1;
+            border-radius: 5px;
+        }
+
+        nav ul li a:hover {
+            background-color: #ffa07a;
+        }
+
+        .container {
+            display: grid;
+            grid-template-areas: 
+                "content content"
+                "categories categories"
+                "footer footer";
+            grid-template-columns: 1fr;
+            grid-gap: 10px;
+            padding: 20px;
+            height: auto;
+        }
+
+        .content {
+            grid-area: content;
+            background-color: #db9e9e;
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .content h1 {
+            margin-bottom: 1rem;
+            font-size: 2rem;
+            color: white;
+        }
+
+        .content p {
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            color: white;
+        }
+
+        .categories {
+            grid-area: categories;
+            background-color: #db9e9e;
+            padding: 1rem;
+            border-radius: 10px;
+        }
+
+        .categories h2 {
+            margin-bottom: 1rem;
+            color: white; 
+        }
+
+        .categories ul {
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .categories ul li {
+            margin-bottom: 1rem;
+            flex: 1;
+        }
+
+        .categories ul li a {
+            text-decoration: none;
+            color: #e75480;
+            font-weight: bold;
+            text-align: center;
+            display: block;
+            padding: 10px;
+            background-color: #fff;
+            border: 2px solid #e75480;
+            border-radius: 10px;
+            width: 100%;
+        }
+
+        .categories ul li a:hover {
+            background-color: #ffb6c1;
+            color: white;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: #e75480;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="cath.jpg" alt="Logo">
+            <h1>Cath Lip Gloss Glam</h1>
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section class="content">
+            <h1>Welcome to Cath Lip Gloss Glam</h1>
+            <p>At Cath Lip Gloss Glam, we specialize in delivering high-quality, long-lasting lip glosses that give you that perfect shine. Whether you're looking for a glossy finish or a bold matte look, we have a wide variety of lip glosses designed to enhance your natural beauty.</p>
+            <p>Explore our vibrant color options, from soft nudes to bold reds, and experience the luxurious textures that glide effortlessly over your lips, leaving them moisturized and smooth all day long.</p>
+        </section>
+
+        <section class="categories">
+            <h2>Categories</h2>
+            <ul>
+                <li><a href="#">New Releases</a></li>
+                <li><a href="#">Best Sellers</a></li>
+                <li><a href="#">Glossy Finish</a></li>
+                <li><a href="#">Matte Finish</a></li>
+            </ul>
+        </section>
+
+</body>
+</html>
